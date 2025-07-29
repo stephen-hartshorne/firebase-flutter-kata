@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(title: const Text('Home', style: TextStyle(color: Colors.deepOrange))),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,10 +24,10 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               width: 800, 
               child: const Card(
-              margin: EdgeInsets.all(32),
-              child: Padding(
-                padding: EdgeInsets.all(16),
-                child: Column(
+                margin: EdgeInsets.all(32),
+                child: Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Column(
                   children: [
                     Text(
                       'Welcome to your health and social needs screening. This short questionnaire helps us understand not just your medical needs, but also the social factors that affect your health and wellbeing.',
@@ -45,9 +45,9 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ],
+                  ),
                 ),
-              ),
-            )
+              )
             ),
             const SizedBox(height: 32),
             ElevatedButton.icon(
@@ -56,16 +56,16 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => PatientInfoPage()),
                 );
               },
-              label: const Text('Click here to get started!'),
+              label: const Text('Click here to get started!', style: TextStyle(fontWeight: FontWeight.bold)),
             ),
-            ElevatedButton.icon(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => QuestionnairePage()),
-                );
-              },
-              label: const Text('debug'),
-            ),
+            // ElevatedButton.icon(
+            //   onPressed: () {
+            //     Navigator.of(context).push(
+            //       MaterialPageRoute(builder: (context) => QuestionnairePage()),
+            //     );
+            //   },
+            //   label: const Text('debug'),
+            // ),
           ],
         ),
       ),

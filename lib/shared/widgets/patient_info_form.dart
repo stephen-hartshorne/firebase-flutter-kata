@@ -275,7 +275,6 @@ class PatientInfoFormState extends State<PatientInfoForm> {
               onChanged: (value) {
                 setState(() => _gender = value);
               },
-              activeColor: Colors.deepOrange,
             ),
             if (state.hasError)
               Text(state.errorText!, style: const TextStyle(color: Colors.red)),

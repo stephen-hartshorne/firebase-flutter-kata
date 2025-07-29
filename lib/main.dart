@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Firebase Flutter Kata',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple.shade800),
         textTheme: GoogleFonts.robotoTextTheme(),
         useMaterial3: true,
       ),
