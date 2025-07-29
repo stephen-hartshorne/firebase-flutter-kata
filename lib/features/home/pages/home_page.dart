@@ -13,11 +13,11 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.home, size: 100, color: Colors.blue),
+            const Icon(Icons.home, size: 100, color: Colors.deepOrange),
             const SizedBox(height: 16),
             const Text(
               'Community Resource Assessment',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.deepPurple),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),

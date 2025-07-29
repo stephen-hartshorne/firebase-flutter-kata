@@ -10,7 +10,7 @@ class QuestionnairePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Questionnaire'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.deepOrange,
         foregroundColor: Colors.white,
         elevation: 0,
       ),

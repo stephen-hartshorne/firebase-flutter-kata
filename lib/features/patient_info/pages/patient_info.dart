@@ -13,7 +13,7 @@ class PatientInfoPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Patient Information'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.deepOrange,
         foregroundColor: Colors.white,
         elevation: 0,
       ),

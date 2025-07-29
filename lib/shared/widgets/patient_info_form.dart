@@ -160,7 +160,7 @@ class PatientInfoFormState extends State<PatientInfoForm> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
-                  color: Colors.blueGrey,
+                  color: Colors.deepOrange,
                 ),
               ),
             ),
@@ -179,7 +179,7 @@ class PatientInfoFormState extends State<PatientInfoForm> {
       title,
       style: TextStyle(
         fontSize: 20,
-        color: Colors.blueGrey,
+        color: Colors.deepOrange,
         fontWeight: FontWeight.bold,
       ),
     );
@@ -199,7 +199,7 @@ class PatientInfoFormState extends State<PatientInfoForm> {
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+          borderSide: BorderSide(color: Colors.deepOrange, width: 2),
         ),
       ),
       controller: controller,
@@ -275,7 +275,7 @@ class PatientInfoFormState extends State<PatientInfoForm> {
               onChanged: (value) {
                 setState(() => _gender = value);
               },
-              activeColor: Colors.blueGrey,
+              activeColor: Colors.deepOrange,
             ),
             if (state.hasError)
               Text(state.errorText!, style: const TextStyle(color: Colors.red)),

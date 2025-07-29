@@ -41,7 +41,7 @@ class _QuestionnaireFormState extends State<QuestionnaireForm> {
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
-                color: Colors.blueGrey,
+                color: Colors.deepOrange,
               ),
             ),
           ),
@@ -63,7 +63,7 @@ class _QuestionnaireFormState extends State<QuestionnaireForm> {
               section.title,
               style: TextStyle(
                 fontSize: 20,
-                color: Colors.blueGrey,
+                color: Colors.deepOrange,
                 fontWeight: FontWeight.bold,
               ),
             ),
