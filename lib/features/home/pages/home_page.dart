@@ -16,12 +16,14 @@ class HomePage extends StatelessWidget {
             const Icon(Icons.home, size: 100, color: Colors.blue),
             const SizedBox(height: 16),
             const Text(
-              'Social Determinants of Health Screening App',
+              'Community Resource Assessment',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
-            const Card(
+            const SizedBox(
+              width: 800, 
+              child: const Card(
               margin: EdgeInsets.all(32),
               child: Padding(
                 padding: EdgeInsets.all(16),
@@ -45,6 +47,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+            )
             ),
             const SizedBox(height: 32),
             ElevatedButton.icon(
@@ -54,6 +57,14 @@ class HomePage extends StatelessWidget {
                 );
               },
               label: const Text('Click here to get started!'),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => QuestionnairePage()),
+                );
+              },
+              label: const Text('debug'),
             ),
           ],
         ),

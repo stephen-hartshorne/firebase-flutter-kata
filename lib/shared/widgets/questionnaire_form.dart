@@ -88,11 +88,11 @@ class _QuestionnaireFormState extends State<QuestionnaireForm> {
           children: [
             Text(
               question.questionText,
-              style: const TextStyle(fontSize: 20),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
             ...question.options.map(
               (option) => RadioListTile<String>(
-                title: Text(option),
+                title: Text(option, style: TextStyle(fontSize: 16)),
                 value: option,
                 groupValue: _answerState.getAnswer(question),
                 onChanged: (value) {
@@ -115,12 +115,12 @@ class _QuestionnaireFormState extends State<QuestionnaireForm> {
           children: [
             Text(
               question.questionText,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
             ...question.options.map((option) {
               final isChecked = current.contains(option);
               return CheckboxListTile(
-                title: Text(option),
+                title: Text(option, style: const TextStyle(fontSize: 16)),
                 value: isChecked,
                 onChanged: (checked) {
                   setState(() {
