@@ -55,14 +55,6 @@ class HomePage extends StatelessWidget {
               },
               label: const Text('Click here to get started!'),
             ),
-            ElevatedButton.icon(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => QuestionnairePage()),
-                );
-              },
-              label: const Text('debug'),
-            ),
           ],
         ),
       ),

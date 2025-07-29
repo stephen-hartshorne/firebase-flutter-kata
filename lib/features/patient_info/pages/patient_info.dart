@@ -1,9 +1,12 @@
+import 'package:firebase_flutter_kata/core/services/patient_info_service.dart';
 import 'package:firebase_flutter_kata/features/questionnaire/pages/questionnaire_page.dart';
 import 'package:firebase_flutter_kata/shared/widgets/patient_info_form.dart';
 import 'package:flutter/material.dart';
 
 class PatientInfoPage extends StatelessWidget {
-  const PatientInfoPage({key});
+  PatientInfoPage({key});
+
+  final PatientInfoService _patientInfoService = PatientInfoService();
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +21,9 @@ class PatientInfoPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: PatientInfoForm(
-            onFormSubmit: (data) {
-              print('Patient data: $data');
+            onFormSubmit: (data) async {
+              await _patientInfoService.createPatient(data);
+
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => QuestionnairePage()),
               );

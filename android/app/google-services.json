@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803502112825",
+    "project_id": "fir-flutter-kata",
+    "storage_bucket": "fir-flutter-kata.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803502112825:android:78a878927823c740624de8",
+        "android_client_info": {
+          "package_name": "com.example.firebaseflutterkata.firebase_flutter_kata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Kr6DJeJGi9xECDX_FSwMbJPcv7pbasU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
