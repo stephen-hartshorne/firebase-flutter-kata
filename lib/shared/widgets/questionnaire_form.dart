@@ -88,7 +88,7 @@ class _QuestionnaireFormState extends State<QuestionnaireForm> {
           children: [
             Text(
               question.questionText,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 20),
             ),
             ...question.options.map(
               (option) => RadioListTile<String>(

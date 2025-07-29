@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 32),
             const Card(
-              margin: EdgeInsets.all(16),
+              margin: EdgeInsets.all(32),
               child: Padding(
                 padding: EdgeInsets.all(16),
                 child: Column(
