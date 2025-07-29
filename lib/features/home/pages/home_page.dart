@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
             const Text(
               'Community Resource Assessment',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.deepPurple),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFF6A1B9A)),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
@@ -58,14 +58,14 @@ class HomePage extends StatelessWidget {
               },
               label: const Text('Click here to get started!', style: TextStyle(fontWeight: FontWeight.bold)),
             ),
-            // ElevatedButton.icon(
-            //   onPressed: () {
-            //     Navigator.of(context).push(
-            //       MaterialPageRoute(builder: (context) => QuestionnairePage()),
-            //     );
-            //   },
-            //   label: const Text('debug'),
-            // ),
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => QuestionnairePage()),
+                );
+              },
+              label: const Text('debug'),
+            ),
           ],
         ),
       ),

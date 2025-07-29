@@ -316,12 +316,6 @@ final List<Section> cmsQuestionnaire = [
           'Nearly every day',
         ],
       ),
-    ],
-  ),
-
-  Section(
-    title: 'Mental Health (Cont.)',
-    questions: [
       Question(
         questionText:
             'Stress means a situation in which a person feels tense, restless, nervous, or anxious, or is unable to sleep at night because his or her mind is troubled all the time. Do you feel this kind of stress these days?',
