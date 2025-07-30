@@ -1,6 +1,7 @@
 import 'package:firebase_flutter_kata/shared/widgets/questionnaire_form.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_flutter_kata/core/questionnaires/cms.dart';
+import '../../success/pages/success_page.dart';
 
 class QuestionnairePage extends StatelessWidget {
   final sections = cmsQuestionnaire;
@@ -21,6 +22,9 @@ class QuestionnairePage extends StatelessWidget {
             sections: sections,
             onFormSubmit: (data) {
               print('Form data: ${data.allAnswers}');
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const SuccessPage()),
+              );
             },
           ),
         ),
