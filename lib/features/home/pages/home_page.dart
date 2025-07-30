@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home', style: TextStyle(color: Colors.deepOrange))),
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -57,14 +57,6 @@ class HomePage extends StatelessWidget {
                 );
               },
               label: const Text('Click here to get started!', style: TextStyle(fontWeight: FontWeight.bold)),
-            ),
-            ElevatedButton.icon(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => QuestionnairePage()),
-                );
-              },
-              label: const Text('debug'),
             ),
           ],
         ),
